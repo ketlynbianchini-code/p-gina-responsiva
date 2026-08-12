@@ -3,31 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feed de Postagens</title>
+  <meta name="description" content="Desafio avançado de CSS Flexbox com layout responsivo.">
+  <title>Flexbox Post Feed | Premium Edition</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <header class="main-header">
+    <div class="container">
+      <h1><i class="fas fa-stream"></i> Feed de Notícias</h1>
+      <p>Explorando o poder do CSS Flexbox</p>
+    </div>
+  </header>
+
   <main class="container">
-    <h1>Postagens Recentes</h1>
+    <section class="post-list">
 
-    <article class="card">
-      <img src="https://via.placeholder.com/150" alt="Imagem da postagem">
-      <div class="article-content">
-        <h2>Entendendo o Flexbox no CSS</h2>
-        <p>Aprenda a estruturar seus elementos de forma responsiva e elegante utilizando propriedades como flex-direction e align-self.</p>
-        <button class="article-btn">Ler mais</button>
-      </div>
-    </article>
+      <article class="card post">
+        <div class="post-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=400" alt="Código no notebook">
+        </div>
+        
+        <div class="post-content">
+          <header class="post-header">
+            <span class="post-category">Desenvolvimento</span>
+            <h2 class="post-title">Dominando o Flexbox Profissionalmente</h2>
+          </header>
+          
+          <section class="post-body">
+            <p>Aprenda como as propriedades flex-direction, align-self e flex-basis funcionam juntas para criar layouts robustos e assimétricos.</p>
+          </section>
+          
+          <footer class="post-footer">
+            <div class="post-tags">
+              <span>#CSS3</span> <span>#Flexbox</span> <span>#Frontend</span>
+            </div>
+            <button class="btn-primary">Ler Artigo <i class="fas fa-arrow-right"></i></button>
+          </footer>
+        </div>
+      </article>
 
-    <article class="card">
-      <img src="https://via.placeholder.com/150" alt="Imagem da postagem">
-      <div class="article-content">
-        <h2>Boas Práticas de HTML e CSS</h2>
-        <p>Organizar seu código é fundamental para facilitar a manutenção e manter seu repositório no GitHub profissional.</p>
-        <button class="article-btn">Ler mais</button>
-      </div>
-    </article>
+      <article class="card post">
+        <div class="post-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=400" alt="Design UI">
+        </div>
+        
+        <div class="post-content">
+          <header class="post-header">
+            <span class="post-category">Design UI/UX</span>
+            <h2 class="post-title">A Importância do Espaçamento no Layout</h2>
+          </header>
+          
+          <section class="post-body">
+            <p>Entenda como o uso correto de gaps, margins e paddings em containers flexíveis melhora drasticamente a legibilidade e a estética.</p>
+          </section>
+          
+          <footer class="post-footer">
+            <div class="post-tags">
+              <span>#UI</span> <span>#UX</span> <span>#Spacing</span>
+            </div>
+            <button class="btn-primary">Ler Artigo <i class="fas fa-arrow-right"></i></button>
+          </footer>
+        </div>
+      </article>
+
+    </section>
   </main>
 
   <script src="script.js"></script>
